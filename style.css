@@ -404,7 +404,7 @@ path{
 .Rights_reserverd{
    box-sizing: border-box;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    margin-left: 10px;
    margin-right: 530px; 
 }
@@ -438,3 +438,94 @@ path{
 .Effect_legal_links:hover{
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 425px) {
+    
+    header{
+        height: auto;
+        flex-direction: column;
+    }
+
+    ul, li, nav, a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    a{
+        padding: 8px 0;
+    }
+
+    .Logo{
+        line-height: 30px;
+    }    
+
+    .Effect_button{
+        color: black;
+        text-align: left;
+    }
+
+    .Effect_link{
+        color: black;
+        margin-left: 5px;
+        text-align: left;
+    }    
+    
+    .Header_main_booking_links{
+        display: block;
+        flex-direction: column;
+    }
+
+    .Header_booking_links{
+        display: block;
+        flex-direction: column;
+    }
+
+    .Section_places{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    img{
+        width: 300px; 
+        height: 400px;
+    }
+
+    .Footer_start{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Footer_logo_email{
+        margin-right: 0px;
+    }
+    
+    .Footer_legal{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+}
+
+/* @media screen and (min-width: 426px) {
+
+    .Logo{
+        line-height: 30px;
+    }
+    
+    img{
+        width: 160px; 
+        height: 250px;
+    }
+
+    .Footer_logo_email{
+        margin-right: 80px;
+    }
+
+    .Rights_reserverd{
+        margin-right: 30px;
+    }
+
+}     */
